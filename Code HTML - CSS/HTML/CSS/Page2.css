@@ -1,0 +1,274 @@
+body {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container {
+    width: 80px;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+}
+
+.menu-container {
+    flex-grow: 1;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-item {
+    margin: 0 15px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.auth-links {
+    display: flex;
+}
+
+.auth-item {
+    margin-left: 15px;
+}
+
+.auth-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.main-content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-intro {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.intro-title {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.intro-description {
+    font-size: 24px;
+    color: #555;
+}
+
+.section-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 30px;
+}
+
+.info-text {
+    flex: 1;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.info-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.info-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.section-reservation {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.reservation-text p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.reservation-button {
+    font-size: 20px;
+    color: #fff;
+    background-color: #ff6f00;
+    padding: 12px 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.reservation-button:hover {
+    background-color: #ff8f00;
+}
+
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ddd;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-links {
+    flex-grow: 1;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 20;
+}
+
+.footer-item {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    text-decoration: underline;
+    color: #555;
+}
+
+.social-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-info {
+    margin-right: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-list {
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+.social-icon {
+    width: 40px;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+/* Petits appareils (smartphones) */
+@media (max-width: 576px) {
+    /* Styles pour les écrans ≤ 576px */
+    .header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .menu-container, .auth-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-title {
+        font-size: 32px;
+    }
+
+    .intro-description {
+        font-size: 16px;
+    }
+
+    .section-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .info-image img {
+        width: 100%;
+    }
+
+    .reservation-button {
+        width: 100%;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .social-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+  /* Moyens appareils (tablettes portrait) */
+  @media (min-width: 577px) and (max-width: 768px) {
+    /* Styles pour les écrans entre 577px et 768px */
+  }
+  
+  /* Tablettes en mode paysage ou petits laptops */
+  @media (min-width: 769px) and (max-width: 992px) {
+    /* Styles pour les écrans entre 769px et 992px */
+  }
+  
+  /* Laptops et desktops */
+  @media (min-width: 993px) and (max-width: 1200px) {
+    /* Styles pour les écrans entre 993px et 1200px */
+  }
+  
+  /* Grands écrans */
+  @media (min-width: 1201px) {
+    /* Styles pour les écrans ≥ 1201px */
+  }
